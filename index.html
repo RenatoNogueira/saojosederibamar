@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/sandstone/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>SJR-MA</title>
+    <link rel="icon" type="image/x-icon" href="#">
+    </head>
+  <body oncontextmenu='return false' class='snippet-body'> 
+
+<header>
+    
+  <section class="tela">
+		<div class="overlay-wcs"></div>
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+		  <source src="../img/video.mp4" type="video/mp4">
+		</video>
+		<div class="container h-100">
+		  <div class="d-flex h-100 text-center align-items-center">
+			<div class="w-100 text-white">
+   
+				<div class="row row-cols-12 container-fluid">
+					<div class="alrazy-title text-center" data-splitting>São José de Ribamar</div>
+				  </div>
+				  <span><br></span>
+				  <script src="https://unpkg.com/splitting@1.0.0/dist/splitting.js"></script>
+				  <script>
+					Splitting();
+				  </script>
+			</div>
+		  </div>
+		</div>
+	  </section>
+</header>
+
+
+<main>
+      <!-- início do preloader -->
+      <div id="preloader">
+        <div class="inner">
+           <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+           <div class="bolas">
+             <h4 class="text-center color text-white">CARREGANDO...</h4>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>                 
+           </div>
+        </div>
+    </div>
+    <!-- fim do preloader -->
+    
+ 
+      <section class="about-section">
+        <div class="container">
+          <div class="row">
+           <div class="col-lg-6">
+            <div class="about-image clearfix">
+              <div class="single-image float-left digit" id="reveal-elements">
+               <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/f6/55/de/igreja-de-sao-jose-de.jpg" class="borda-sombra" alt="">
+              </div> 
+             <div class="single-image image-tow float-right digit" id="reveal-elements">
+            <img src="img/igrejabiaman.jpg" class="borda-sombra" alt="">
+          </div> 
+        </div> 
+          </div>
+            <div class="col-lg-6 digit" id="reveal-elements">
+             <div class="about-content" id="iniciop" v-html="inicio">
+                {{inicio}}
+            </div> 
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba mais <i class="fas fa-arrow-right"></i></button>
+           </div>
+          </div> 
+        </div> 
+       </section>
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Histórico</h5>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="lenda" v-html="alenda">
+            <span>
+            {{ alenda }}
+            </span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+
+
+
+
+	<section class="we_help_you aos-init aos-animate" id="we_help">
+        <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                <div class="col-lg-9 mx-auto">
+                    <h3 class="display-2">O que fazer em Ribamar</h3>
+                    <p>Já na cidade balneária de São José do Ribamar a religiosidade é a marca mais forte, por abrigar um dos santuários mais importantes do Norte-Nordeste em homenagem a São José, o padroeiro do Maranhão. Além das festas religiosas, a região se destaca pela culinária, pelas tranquilas praias urbanas e desertas, e pelo artesanato em cerâmica. Durante o festejo no santuário de São José de Ribamar, 500 mil romeiros são recebidos todos os anos.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                    <div class="icon-box">
+                        <div class="d-flex">
+                            <div class="icon-who">
+                            </div>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#Modalsjr"> 
+                            <div class="icon-box-info" id="estatua" v-html="monumento">
+                               {{monumento}}
+								<div class="gap-2 d-md-flex justify-content-md-end">
+								  </div>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                    <div class="icon-box">
+                        <div class="d-flex">
+                            <div class="icon-who bg-green">
+                            </div>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#Modaligreja"> 
+                              <div class="icon-box-info" id="igreja" v-html="igrejasjr">
+                                 {{ igrejasjr }}
+                  <div class="gap-2 d-md-flex justify-content-md-end">
+                    </div>
+                              </div>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+
+                <div class="col-lg-6" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                    <div class="icon-box">
+                        <div class="d-flex">
+                            <div class="icon-who bg-blue">
+                            </div>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#Modalgruta"> 
+                              <div class="icon-box-info" id="gruta" v-html="grutadeloude">
+                                 {{ grutadeloude }}
+                  <div class="gap-2 d-md-flex justify-content-md-end">
+                    </div>
+                              </div>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                    <div class="icon-box">
+                        <div class="d-flex">
+                            <div class="icon-who bg-yellow">
+                            </div>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#ModalMuseuxVotos"> 
+                              <div class="icon-box-info" id="museu" v-html="exvotos">
+                                 {{ exvotos }}
+                  <div class="gap-2 d-md-flex justify-content-md-end">
+                    </div>
+                              </div>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+
+                <div class="col-lg-6" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                    <div class="icon-box">
+                        <div class="d-flex">
+                            <div class="icon-who bg-bluee">
+                            </div>
+                              <a href="#" data-bs-toggle="modal" data-bs-target="#ModalCasaDosMilagres"> 
+                                <div class="icon-box-info" id="cmilagres" v-html="cdosMilagres">
+                                   {{ cdosMilagres }}
+                    <div class="gap-2 d-md-flex justify-content-md-end">
+                      </div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                    <div class="icon-box">
+                        <div class="d-flex">
+                            <div class="icon-who bg-pink">
+                            </div>
+                            <div class="icon-box-info">
+                                <h5>Praias</h5>
+                                <p>There are many variations of passages of Lorem Ipsum, but the majority have suffered in some form, or randomised words which don't look even.</p>
+								<div class="gap-2 d-md-flex justify-content-md-end">
+									<button type="button" class="btn btn-link btn-sm"  data-bs-toggle="modal" data-bs-target="#praias">Saiba mais</button>
+								  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Modal monumento -->
+<div class="modal fade" id="Modalsjr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Monumento</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="saojose" v-html="sjr">
+	{{ sjr }}
+		</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+	</div>
+</div>
+</div>
+</div>
+  </div>
+
+  <!-- Modal igreja -->
+<div class="modal fade" id="Modaligreja" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Igreja</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="migreja" v-html="migrejasjr">
+	{{ migrejasjr }}
+		</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+	</div>
+</div>
+</div>
+</div>
+  </div>
+
+    <!-- Modal Gruta -->
+<div class="modal fade" id="Modalgruta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Gruta Nossa Senhora de Lourdes</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="mgruta" v-html="mlourdes">
+	{{ mlourdes }}
+		</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+	</div>
+</div>
+</div>
+</div>
+  </div>
+
+<!-- Modal Museu dos Ex-votos -->
+<div class="modal fade" id="ModalMuseuxVotos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Museu dos Ex-votos</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="mmuseu" v-html="mexvotos">
+	{{ mexvotos }}
+		</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+	</div>
+</div>
+</div>
+</div>
+  </div>
+
+  <!-- Modal Casa dos Milagres -->
+<div class="modal fade" id="ModalCasaDosMilagres" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Museu dos Ex-votos</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="mcasamilagre" v-html="mMilagres">
+	{{ mMilagres }}
+		</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+	</div>
+</div>
+</div>
+</div>
+  </div>
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div class="espaco"></div>
+
+    <div class="container py-md-6 py-4">
+      <div class="row justify-content-center">
+         <div class="col-xl-10">
+            <div class="lc-block mb-5">
+               <div editable="rich" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom">
+                  <h2 class="text-center rfs-20 fw-bolder">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse a lacus est. Etiam diam metus, lobortis </h2>
+               </div>
+            </div>
+            <div class="row text-center text-md-start">
+               <div class="col-md-6">
+                  <div class="lc-block">
+                     <div editable="rich" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus, lobortis non augue at, placerat viverra risus.&nbsp;</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="lc-block">
+                     <div editable="rich" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus, lobortis non augue at, placerat viverra risus.&nbsp;</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+      
+  
+    <div class="min-vh-100 d-flex">
+      <div class="container align-self-center">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="lc-block py-5">
+              <div editable="rich" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+    
+                <h5><strong>THIS IS MY FEATURE 1</strong></h5>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+              </div>
+            </div><!-- /lc-block -->
+    
+            <div class="lc-block py-5">
+              <div editable="rich" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+    
+                <h5><strong>THIS IS MY FEATURE 2</strong></h5>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+              </div>
+            </div><!-- /lc-block -->
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-center ">
+    
+            <div class="lc-block mb-2" style="width:100%"  data-aos="fade-down"
+			data-aos-anchor-placement="bottom-bottom">
+		
+<img src="../img/reza.svg">
+
+            </div>
+                  </div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+            <div class="lc-block py-5">
+              <div editable="rich" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+    
+                <h5><strong>COSTUMES</strong></h5>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+              </div>
+            </div><!-- /lc-block -->
+    
+            <div class="lc-block py-5">
+              <div editable="rich" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+    
+                <h5><strong>THIS IS MY FEATURE 4</strong></h5>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+              </div>
+            </div><!-- /lc-block -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="espaco"></div>
+
+    <div class="parallax d-flex container-fluid">
+    </div>
+    <div class="container p-5 bg-white" style="margin-top:-100px">
+      <div class="row">
+        <div class="col-md-4 text-center align-self-center">
+          <div class="lc-block border-end border-2 ">
+            <div editable="rich">
+              <p class="display-4 text-secondary">PRAIAS</p>
+            </div>
+          </div><!-- /lc-block -->
+        </div><!-- /col -->
+        <div class="col-md-8">
+          <div class="lc-block">
+            <div editable="rich">
+              <p class="display-4" data-aos="fade-up"
+			  data-aos-anchor-placement="bottom-bottom">São José de Ribamar é repleta de lindas praias</p>
+            </div>
+          </div><!-- /lc-block -->
+        </div><!-- /col -->
+      </div>
+      <div class="row">
+        <div class="col-md-9 offset-md-1">
+          <div class="lc-block mt-5">
+            <div editable="rich">
+              <p class="lead text-secondary text-right"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</p>
+              <p class="lead text-secondary text-right">Ut porta lacus eget nisi fermentum lobortis. Vestibulum facilisis tempor
+                ipsum, ut rhoncus magna ultricies laoreet. Proin vehicula erat eget libero accumsan iaculis. </p>
+            </div>
+          </div><!-- /lc-block -->
+        </div><!-- /col -->
+      </div>
+    </div>
+
+
+
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-4 align-self-center">
+				<div class="lc-block border-top py-4" style="letter-spacing:10px">
+					<div editable="rich">
+						<h2><strong>MUITO MAIS</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="lc-block">
+					<div editable="rich">
+	
+						<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus porttitor dui, in vestibulum metus pulvinar sit amet. Phasellus finibus fermentum eros quis maximus. Aenean feugiat elit id quam ornare, in iaculis nunc tincidunt. Nullam pellentesque ante sit amet ipsum pulvinar, ac accumsan metus pulvinar.&nbsp;</strong></p>
+	
+	
+					</div>
+				</div>
+				<div class="lc-block">
+					<div editable="rich">
+	
+						<p>Mauris sollicitudin, ante quis suscipit molestie, est tellus semper nunc, quis porttitor tellus tortor et orci. Quisque egestas gravida eros et tristique. Praesent arcu turpis, rhoncus at nunc ut, ornare ultrices purus. Nullam fermentum eros eget sapien dignissim eleifend. Maecenas sodales, neque vestibulum aliquam varius, elit turpis tincidunt enim, eu pellentesque leo ante sit amet lectus.</p>
+	
+	
+					</div>
+				</div>
+				<div class="lc-block">
+					<div editable="rich">
+	
+						<p><em>Pellentesque eu dolor in enim efficitur dapibus id quis nisi. Quisque interdum bibendum vulputate. Nunc dui lacus, ultrices id gravida tempor, sollicitudin dapibus nisl. Vivamus dictum quam in purus commodo molestie. Mauris ultricies tortor urna. Praesent non aliquet lectus. Sed eget massa mauris. Vestibulum euismod cursus tortor, et aliquet orci facilisis eu. Cras ultricies luctus dolor quis laoreet. Suspendisse nisi massa, feugiat in dignissim sed, fermentum sed nibh.</em></p>
+	
+	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+  <!-- partial:index.partial.html -->
+  <div class="espa">
+   <div class="gallery">
+    <div class="gallery__prev"></div>
+    <div class="gallery__next"></div>
+    <div class="gallery__stream">
+      <div class="gallery__item bg-1 img-fluid"><div class="img_info">Praia de Panaquatira</div></div>
+      <div class="gallery__item bg-2 img-fluid"></div>
+      <div class="gallery__item bg-3 img-fluid"><div class="img_info">Praia de Ribamar</div></div>
+      <div class="gallery__item bg-4 img-fluid"></div>
+      <div class="gallery__item bg-5 img-fluid"></div>
+      <div class="gallery__item bg-6 img-fluid"></div>
+      <div class="gallery__item bg-7 img-fluid"></div>
+    </div>
+  </div>
+</div>
+    <!-- partial -->
+
+
+
+<section class="logo-list">
+  <div class="container">
+    <h3>QUEM APÓIA<h3>
+      <div class="row">
+          <div class="col-lg-2 col-md-4 col-6">
+              <a href="#"><img src="https://www.markuptag.com/images/bluehost-logo.png" class="img-fluid" alt="Bluehost logo"></a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+              <a href="#"><img src="https://www.markuptag.com/images/hostgator-logo.png" class="img-fluid" alt="Hostgator logo"></a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+              <a href="#"><img src="https://www.markuptag.com/images/greengeeks-logo.png" class="img-fluid" alt="Green Geeks logo"></a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+              <a href="#"><img src="https://www.markuptag.com/images/wordpress-logo.png" class="img-fluid" alt="WordPress logo"></a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+              <a href="#"><img src="https://www.markuptag.com/images/dreamhost-logo.png" class="img-fluid" alt="DreamHost logo"></a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+              <a href="#"><img src="https://www.markuptag.com/images/hostinger-logo.png" class="img-fluid" alt="Hostinger logo"></a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+  <b>Você gosta de cookies?</b> &#x1F36A; Usamos cookies para garantir que você tenha a melhor experiência em nosso site.<a href="https://policies.google.com/technologies/cookies?hl=pt-BR" target="_blank"> Leia mais</a>
+
+  <button type="button" class="btn btn-primary btn-sm acceptcookies">
+      Aceitar
+  </button>
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
+
+
+  </main>
+
+
+    <div class="espaco"></div>
+
+
+<!--Bottom Footer-->
+<div class="bottom section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="copyright">
+          <p>© <span>2022</span> <a href="#" class="transition">Renato Nogueira</a> Quase todos os direitos autorais reservados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Bottom Footer-->
+<script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+	<script src="js/modal.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script>
+      // Controle da animação
+      var controller = new ScrollMagic.Controller();
+    </script>
+    <script>
+      // Pelo amor de Deus, não mexa aqui...
+      var revealElements = document.getElementsByClassName("digit");
+      for (var i=0; i<revealElements.length; i++) { 
+        new ScrollMagic.Scene({
+                  triggerElement: revealElements[i], 
+                  offset: 50,												 
+                  triggerHook: 0.9,
+                })
+                .setClassToggle(revealElements[i], "visible")
+                .addTo(controller);
+      }
+    </script>
+    <script>
+      // Nem aqui fi da peste 
+      var revealElements = document.getElementsByClassName("digit2");
+      for (var i=0; i<revealElements.length; i++) { 
+        new ScrollMagic.Scene({
+                  triggerElement: revealElements[i], 
+                  offset: 50,												 
+                  triggerHook: 0.9,
+                })
+                .setClassToggle(revealElements[i], "visible")
+                .addTo(controller);
+      }
+    </script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(window).on('load', function () { 
+          $('#preloader .inner').fadeOut(); 
+          $('#preloader').delay(200).fadeOut('slow'); 
+          $('body').delay(200).css({'overflow': 'visible'});
+      })
+      //]]>
+      </script> 
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+<script>
+  window.addEventListener("cookieAlertAccept", function() {
+    alert("cookies aceito com sucesso")
+})
+</script>
+<script>
+	AOS.init();
+  </script>
+  </body>
+</html>

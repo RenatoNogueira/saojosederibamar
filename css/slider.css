@@ -1,0 +1,147 @@
+
+/* Gallery */
+.img_info{
+  font-size: 3vw;
+  margin-top: 45%;
+  text-shadow: 0 0 0.2em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+  text-align: center;
+  position: relative;
+  color:rgb(255, 255, 255);
+  z-index: 999;
+}
+.espa{
+  width: 100%;
+  height: 90%;
+  padding-top: 10%;
+  padding-bottom: 20%;
+
+}
+.gallery {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 90%;
+  max-height: 28vw;
+  overflow: hidden;
+}
+
+.gallery:before,
+.gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+
+.gallery:before {
+  left: 0;
+  background:  linear-gradient(to right, rgb(214, 243, 250) 0%, rgba(173, 171, 171, 0) 100%);
+}
+
+.gallery:after {
+  right: 0;
+  background:  linear-gradient(to left, rgb(214, 243, 250) 0%, rgba(173, 171, 171, 0) 100%);
+}
+
+.gallery__stream {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__item {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transition: 1s all ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+}
+
+.gallery__item:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  transform: translateX(-100%) scale(.8);
+}
+
+.gallery__item:nth-child(2) {
+  left: 0;
+  z-index: 2;
+  transform: translateX(-50%) scale(.8);
+}
+
+.gallery__item:nth-child(3) {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(1);
+}
+
+.gallery__item:nth-child(4) {
+  left: 100%;
+  z-index: 2;
+  transform: translateX(-50%) scale(.8);
+}
+
+.gallery__item:nth-child(n+5) {
+  left: 100%;
+  z-index: 1;
+  transform: scale(.8);
+}
+
+/* Controllers */
+
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(.8);
+  cursor: pointer;
+}
+
+.gallery__prev {
+  left: 0;
+}
+
+.gallery__next {
+  left: 100%;
+}
+
+/* Backgrounds */
+
+.bg-1 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/08/a4/13/76/praia-panaquatira.jpg);
+}
+
+.bg-2 {
+  background-image: url(https://saoluis.ma.gov.br/midias/2021/grandes/up_ag_33566_dd951a3a-1769-81ed-fb95-1766d61761a3.jpg);
+}
+
+.bg-3 {
+  background-image: url(https://www.guiadoturismobrasil.com/up/img/1446894162.jpg);
+}
+
+.bg-4 {
+  background-image: url(https://www.praias-360.com.br/img-600/ma/sao-jose-de-ribamar/ma-sao-jose-de-ribamar-praia-do-meio-030.jpg);
+}
+
+.bg-5 {
+  background-image: url(https://blogmaisbrasil.alliahotels.com.br/wp-content/uploads/2017/12/praia-de-sao-marcos-sao-luis-maranhao.jpg);
+}
+
+.bg-6 {
+  background-image: url(https://i1.wp.com/www.slzturismo.com.br/wp-content/uploads/2015/02/IMG_20151226_081657820_HDR.jpg?fit=2592%2C1944&ssl=1);
+}
+
+.bg-7 {
+  background-image: url(https://picosma.com/wp-content/uploads/2020/02/JZBS2888.jpg);
+}
