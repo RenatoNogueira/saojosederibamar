@@ -16,6 +16,10 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+ 
+
     <title>SJR-MA</title>
     <link rel="icon" type="image/x-icon" href="#">
     </head>
@@ -210,17 +214,16 @@
                         <div class="d-flex">
                             <div class="icon-who bg-pink">
                             </div>
-                            <div class="icon-box-info">
-                                <h5>Praias</h5>
-                                <p>There are many variations of passages of Lorem Ipsum, but the majority have suffered in some form, or randomised words which don't look even.</p>
-								<div class="gap-2 d-md-flex justify-content-md-end">
-									<button type="button" class="btn btn-link btn-sm"  data-bs-toggle="modal" data-bs-target="#praias">Saiba mais</button>
-								  </div>
-                            </div>
-                        </div>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#ModalCaminhodeSJ"> 
+                              <div class="icon-box-info" id="caminhosaojose" v-html="caminhosj">
+                                 {{ caminhosj }}
+                  <div class="gap-2 d-md-flex justify-content-md-end">
                     </div>
-                </div>
-            </div>
+                              </div>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
         </div>
     </section>
 
@@ -323,42 +326,42 @@
 </div>
   </div>
 
+    <!-- Modal Caminho de São José -->
+<div class="modal fade" id="ModalCaminhodeSJ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Museu dos Ex-votos</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="mcaminosj" v-html="mcaminho">
+	{{ mcaminho }}
+		</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+	</div>
+</div>
+</div>
+</div>
+  </div>
+
 
 
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<div class="espaco"></div>
 
-    <div class="container py-md-6 py-4">
-      <div class="row justify-content-center">
-         <div class="col-xl-10">
-            <div class="lc-block mb-5">
-               <div editable="rich" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom">
-                  <h2 class="text-center rfs-20 fw-bolder">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse a lacus est. Etiam diam metus, lobortis </h2>
-               </div>
-            </div>
-            <div class="row text-center text-md-start">
-               <div class="col-md-6">
-                  <div class="lc-block">
-                     <div editable="rich" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus, lobortis non augue at, placerat viverra risus.&nbsp;</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="lc-block">
-                     <div editable="rich" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus, lobortis non augue at, placerat viverra risus.&nbsp;</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+<section class="we_help_you aos-init aos-animate" id="we_help">
+  <div class="container">
+      <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+          <div class="col-lg-9 mx-auto">
+              <h2 class="display-2">Cultura-Culinária-Eventos-Festivais</h2>
+              <p>A culinária de São José de Ribamar tem sabor bem característico à base de frutos do mar e peixes de água salgada típicos da região. Uma das iguarias do ribamarense é o peixe-pedra, muito abundante na região, que entre os meses de julho e agosto é realizado um festival onde servem este peixe cozido, frito, assado e escabeche.</p>
+          </div>
       </div>
-   </div>
-      
-  
+    </section>
+
+     
     <div class="min-vh-100 d-flex">
       <div class="container align-self-center">
         <div class="row">
@@ -440,9 +443,8 @@
         <div class="col-md-9 offset-md-1">
           <div class="lc-block mt-5">
             <div editable="rich">
-              <p class="lead text-secondary text-right"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor.&nbsp;</p>
-              <p class="lead text-secondary text-right">Ut porta lacus eget nisi fermentum lobortis. Vestibulum facilisis tempor
-                ipsum, ut rhoncus magna ultricies laoreet. Proin vehicula erat eget libero accumsan iaculis. </p>
+              <p class="lead text-secondary text-right"> O município possui clima tropical, quente e úmido, com temperatura média variando entre 25 e 33 graus. Apresenta dois períodos distintos: um chuvoso, de dezembro a julho, e outro seco, de agosto a novembro.</p>
+              <p class="lead text-secondary text-right">A praia de Banho é a mais acessível da cidade, fica próxima ao centro, na Avenida Beira-Mar. Nela encontram-se bares e restaurantes muito frequentados nos finais da semana.</p>
             </div>
           </div><!-- /lc-block -->
         </div><!-- /col -->
@@ -456,7 +458,7 @@
 			<div class="col-md-4 align-self-center">
 				<div class="lc-block border-top py-4" style="letter-spacing:10px">
 					<div editable="rich">
-						<h2><strong>MUITO MAIS</strong></h2>
+						<h2><strong>BELEZAS NATURAIS</strong></h2>
 					</div>
 				</div>
 			</div>
@@ -464,7 +466,7 @@
 				<div class="lc-block">
 					<div editable="rich">
 	
-						<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus porttitor dui, in vestibulum metus pulvinar sit amet. Phasellus finibus fermentum eros quis maximus. Aenean feugiat elit id quam ornare, in iaculis nunc tincidunt. Nullam pellentesque ante sit amet ipsum pulvinar, ac accumsan metus pulvinar.&nbsp;</strong></p>
+						<p><strong>As praias em torno da cidade são repeltas de belas paisagens naturais, no turismo nossas praias são bstante visitadas por visitantes do Brasil inteiro e até mesmo de outros paises. A cidade é simplesmente banahada pelo oceano.</strong></p>
 	
 	
 					</div>
@@ -472,7 +474,7 @@
 				<div class="lc-block">
 					<div editable="rich">
 	
-						<p>Mauris sollicitudin, ante quis suscipit molestie, est tellus semper nunc, quis porttitor tellus tortor et orci. Quisque egestas gravida eros et tristique. Praesent arcu turpis, rhoncus at nunc ut, ornare ultrices purus. Nullam fermentum eros eget sapien dignissim eleifend. Maecenas sodales, neque vestibulum aliquam varius, elit turpis tincidunt enim, eu pellentesque leo ante sit amet lectus.</p>
+						<p>São José de Ribamar é uma cidade repleta de belezas naturais e possui encantadoras praias urbanas com boa estrutura. A praia de Banho fica próxima ao centro, na Avenida Beira-Mar. A praia de Panaquatira é considerada uma das melhores do município, com águas tranquilas ótimas para banho. As praias do Meio e Araçagy ficam bem próximas de São Luís, mas pertencem a São José de Ribamar.</p>
 	
 	
 					</div>
@@ -480,7 +482,7 @@
 				<div class="lc-block">
 					<div editable="rich">
 	
-						<p><em>Pellentesque eu dolor in enim efficitur dapibus id quis nisi. Quisque interdum bibendum vulputate. Nunc dui lacus, ultrices id gravida tempor, sollicitudin dapibus nisl. Vivamus dictum quam in purus commodo molestie. Mauris ultricies tortor urna. Praesent non aliquet lectus. Sed eget massa mauris. Vestibulum euismod cursus tortor, et aliquet orci facilisis eu. Cras ultricies luctus dolor quis laoreet. Suspendisse nisi massa, feugiat in dignissim sed, fermentum sed nibh.</em></p>
+						<p>Também possui paraísos de praias desertas e belas paisagens naturais com águas calmas e muito sol. Não deixe de conhecer, as praias de Jararaí e Boa Viagem, praias isoladas com belas paisagens naturais; a praia de Juçatuba, uma praia única cercada por manguezais e lindas paisagens; e as praias de Caúra e Ponta Verde, praias formadas por falésias e belezas naturais magníficas.</p>
 	
 	
 					</div>
@@ -491,29 +493,153 @@
 
 
 
-  <!-- partial:index.partial.html -->
+  <!-- GAaleria praias -->
   <div class="espa">
    <div class="gallery">
     <div class="gallery__prev"></div>
     <div class="gallery__next"></div>
     <div class="gallery__stream">
-      <div class="gallery__item bg-1 img-fluid"><div class="img_info">Praia de Panaquatira</div></div>
-      <div class="gallery__item bg-2 img-fluid"></div>
-      <div class="gallery__item bg-3 img-fluid"><div class="img_info">Praia de Ribamar</div></div>
-      <div class="gallery__item bg-4 img-fluid"></div>
-      <div class="gallery__item bg-5 img-fluid"></div>
-      <div class="gallery__item bg-6 img-fluid"></div>
-      <div class="gallery__item bg-7 img-fluid"></div>
+      <div class="gallery__item bg-1 img-fluid"><div class="img_info">Praia de Banho</div></div>
+      <div class="gallery__item bg-2 img-fluid"><div class="img_info">Praia do Aracagy</div></div>
+      <div class="gallery__item bg-3 img-fluid"><div class="img_info">Praia do Juçatuba</div></div>
+      <div class="gallery__item bg-4 img-fluid"><div class="img_info">Praia de panaquatira</div></div>
+      <div class="gallery__item bg-5 img-fluid"><div class="img_info">Praia do Caura</div></div>
+      <div class="gallery__item bg-6 img-fluid"><div class="img_info">Praia da Ponta Verde</div></div>
+
     </div>
   </div>
 </div>
-    <!-- partial -->
+    <!-- fim praias -->
 
+
+
+
+
+
+
+
+    <div class="espaco"></div>
+
+
+
+    
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+                  <div id="testimonial-slider" class="owl-carousel">
+                      <div class="testimonial">
+                          <div class="testimonial-content">
+                              <div class="testimonial-icon">
+                                  <i class="fa fa-quote-left"></i>
+                              </div>
+                              <p class="description">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                              </p>
+                          </div>
+                          <h3 class="title">williamson</h3>
+                          <span class="post">Web Developer</span>
+                      </div>
+
+                         
+                      <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-icon">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                            </p>
+                        </div>
+                        <h3 class="title">Kristina</h3>
+                        <span class="post">Web Designer</span>
+                    </div>
+
+                       
+                    <div class="testimonial">
+                      <div class="testimonial-content">
+                          <div class="testimonial-icon">
+                              <i class="fa fa-quote-left"></i>
+                          </div>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                          </p>
+                      </div>
+                      <h3 class="title">Kristina</h3>
+                      <span class="post">Web Designer</span>
+                  </div>
+
+                     
+                  <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                        </p>
+                    </div>
+                    <h3 class="title">Kristina</h3>
+                    <span class="post">Web Designer</span>
+                </div>
+   
+                      <div class="testimonial">
+                          <div class="testimonial-content">
+                              <div class="testimonial-icon">
+                                  <i class="fa fa-quote-left"></i>
+                              </div>
+                              <p class="description">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                              </p>
+                          </div>
+                          <h3 class="title">Kristina</h3>
+                          <span class="post">Web Designer</span>
+                      </div>
+   
+                      <div class="testimonial">
+                          <div class="testimonial-content">
+                              <div class="testimonial-icon">
+                                  <i class="fa fa-quote-left"></i>
+                              </div>
+                              <p class="description">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                              </p>
+                          </div>
+                          <h3 class="title">williamson</h3>
+                          <span class="post">Web Developer</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+ 
+ <script>
+  $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:3,
+        itemsDesktop:[1000,3],
+        itemsDesktopSmall:[980,2],
+        itemsTablet:[768,2],
+        itemsMobile:[650,1],
+        pagination:true,
+        navigation:false,
+        slideSpeed:1000,
+        autoPlay:true
+    });
+});
+ </script>
+
+
+
+
+
+
+<div class="espaco"></div>
 
 
 <section class="logo-list">
   <div class="container">
-    <h3>QUEM APÓIA<h3>
+    <h3 class="display-6">QUEM APÓIA<h3>
       <div class="row">
           <div class="col-lg-2 col-md-4 col-6">
               <a href="#"><img src="https://www.markuptag.com/images/bluehost-logo.png" class="img-fluid" alt="Bluehost logo"></a>
@@ -561,7 +687,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="copyright">
-          <p>© <span>2022</span> <a href="#" class="transition">Renato Nogueira</a> Quase todos os direitos autorais reservados.</p>
+          <p>© <span>2022</span> <a href="https://www.instagram.com/renatopsnogueira" class="transition" target="_blank" >Renato Nogueira</a> Quase todos os direitos autorais reservados.</p>
         </div>
       </div>
     </div>
@@ -627,5 +753,10 @@
 <script>
 	AOS.init();
   </script>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
   </body>
 </html>

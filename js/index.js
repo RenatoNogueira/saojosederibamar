@@ -69,3 +69,14 @@ var txt1 = new Vue({
       </p>`
     }
   });
+
+  var caminhoSaoJose = new Vue({
+    el: '#caminhosaojose',
+    data: {
+      caminhosj: `
+      <h5>Caminho de São José</h5>
+      <p>
+      Em frente a Igreja da Matriz, veja as esculturas que contam a história da peregrinação da família de Jesus.
+      </p>`
+    }
+  });

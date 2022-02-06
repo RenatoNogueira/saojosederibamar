@@ -119,29 +119,24 @@
 /* Backgrounds */
 
 .bg-1 {
-  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/08/a4/13/76/praia-panaquatira.jpg);
+  background-image: url(../img/praia-de-banho.jpg);
 }
 
 .bg-2 {
-  background-image: url(https://saoluis.ma.gov.br/midias/2021/grandes/up_ag_33566_dd951a3a-1769-81ed-fb95-1766d61761a3.jpg);
+  background-image: url(../img/praia-do-aracagy.jpg);
 }
 
 .bg-3 {
-  background-image: url(https://www.guiadoturismobrasil.com/up/img/1446894162.jpg);
+  background-image: url(../img/praia-do-jucatuba.jpg);
 }
 
 .bg-4 {
-  background-image: url(https://www.praias-360.com.br/img-600/ma/sao-jose-de-ribamar/ma-sao-jose-de-ribamar-praia-do-meio-030.jpg);
+  background-image: url(../img/praia-de-panaquatira.jpg);
 }
 
 .bg-5 {
-  background-image: url(https://blogmaisbrasil.alliahotels.com.br/wp-content/uploads/2017/12/praia-de-sao-marcos-sao-luis-maranhao.jpg);
+  background-image: url(../img/praia-de-caura.jpg);
 }
-
 .bg-6 {
-  background-image: url(https://i1.wp.com/www.slzturismo.com.br/wp-content/uploads/2015/02/IMG_20151226_081657820_HDR.jpg?fit=2592%2C1944&ssl=1);
-}
-
-.bg-7 {
-  background-image: url(https://picosma.com/wp-content/uploads/2020/02/JZBS2888.jpg);
+  background-image: url(../img/praia-da-ponta-verde.jpg);
 }

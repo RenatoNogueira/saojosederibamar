@@ -63,3 +63,12 @@
       <figcaption class="figure-caption text-right"><em> O Salão das Graças, primeiro nome dado ao espaço, foi construído em 1895 e, em pouco tempo, foi tomado por peças de pessoas de vários lugares do Maranhão.</em></figcaption></p>`
     }
   });
+
+  var mCaminhosj = new Vue({
+    el: '#mcaminosj',
+    data: {
+      mcaminho: `
+      <img src="../img/caminhosj.jpg" alt="São José de Ribamar" class="img img-fluid">
+      <figcaption class="figure-caption text-right"><em>No Santuário de São José de Ribamar - MA, existe o "Caminho de São José".  São estátuas que representam oito fases da vida de São José.</em></figcaption></p>`
+    }
+  });
