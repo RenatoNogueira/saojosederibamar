@@ -45,7 +45,7 @@
     }
   });
 
-  
+
   var mmuseu = new Vue({
     el: '#mmuseu',
     data: {
