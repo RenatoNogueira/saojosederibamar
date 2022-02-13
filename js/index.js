@@ -8,8 +8,8 @@ var iniciop = new Vue({
   }
 });
 
-var txt1 = new Vue({
-  el: '#txt1',
+var lavapratzos = new Vue({
+  el: '#lavapratos',
   data: {
     lavaPratos: `O Lava-Pratos acontece sempre no final de semana após o carnaval tradicional. O evento é considerado como sendo um dos carnavais fora de época mais antigos do país, além de encerrar oficialmente a temporada momesca no Estado.
       De acordo com historiadores ribamarenses, o evento teve sua origem no ano de 1946, no então chamado “Carnaval da Vitória”, assim batizado após a vitoriosa participação do Brasil na Segunda Guerra Mundial, que terminou em 1945`
@@ -59,7 +59,7 @@ var igreja = new Vue({
   }
 });
 
-var casaMilagres = new Vue({
+var cmilagres = new Vue({
   el: '#cmilagres',
   data: {
     cdosMilagres: `

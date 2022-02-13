@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-image: url(../img/papiro.jpg);
+    background-color: #f0f0f0;
     background-attachment: local;
     background-size: 100%;
 }
@@ -63,6 +63,47 @@ a {
     border-radius: 5px;
     -moz-border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+/******************* Videos *******************/
+.overlay::after{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .7;
+}
+.overlay > * {
+   z-index: 100;
+}
+.play-one, .play-two, .play-tree{
+    border-radius: 2%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.play-one{
+    background-image: url("../img/igrejabiaman2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.play-two{
+    background-image: url("../img/igrejabiaman.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.play-tree{
+    background-image: url("../img/sao-jose-de-ribamar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+ 
 }
 
 /******************* Apresentação front *******************/
@@ -257,7 +298,7 @@ a {
 /******************* Conteudo 1 *******************/
 .we_help_you {
     max-width: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -274,7 +315,7 @@ a {
 .We_are_next h3 {
     text-align: center;
     font-size: 35px;
-    color: #ffffff;
+    color: rgb(88, 88, 88);;
     font-weight: 700;
     padding-bottom: 15px;
   }
@@ -405,7 +446,6 @@ a {
 .about-content h3 {
     color: rgb(44, 44, 44);
     font-family: 'Poppins', sans-serif;
-    text-shadow: black 0.1em 0.1em 0.2em;
     padding-bottom: 10px;
 }
 
@@ -425,7 +465,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-   background-image: url(../img/papiro.jpg);
+   background-color: #0a1c2e;
     /* cor do background que vai ocupar o body */
     z-index: 999;
     /* z-index para jogar para frente e sobrepor tudo */
@@ -441,7 +481,6 @@ a {
 
 .bolas>div {
     display: inline-block;
-    background-color: rgb(255, 196, 0);
     width: 25px;
     height: 25px;
     border-radius: 100%;
@@ -454,32 +493,39 @@ a {
 }
 
 .bolas>div:nth-child(1) {
+    background-color: rgb(255, 196, 0);
     animation-duration: 0.75s;
     animation-delay: 0;
 }
 
 .bolas>div:nth-child(2) {
+    background-color: rgb(37, 240, 11);
     animation-duration: 0.75s;
     animation-delay: 0.12s;
 }
 
 .bolas>div:nth-child(3) {
+    background-color: rgb(0, 60, 255);
     animation-duration: 0.75s;
     animation-delay: 0.24s;
 }
 .bolas>div:nth-child(4) {
+    background-color: rgb(255, 0, 221);
     animation-duration: 0.75s;
     animation-delay: 0.34s;
 }
 .bolas>div:nth-child(5) {
+    background-color: rgb(255, 0, 13);
     animation-duration: 0.75s;
     animation-delay: 0.39s;
 }
 .bolas>div:nth-child(6) {
+    background-color: rgb(0, 255, 221);
     animation-duration: 0.75s;
     animation-delay: 0.42s;
 }
 .bolas>div:nth-child(7) {
+    background-color: rgb(255, 0, 76);
     animation-duration: 0.75s;
     animation-delay: 0.45s;
 }
@@ -496,7 +542,7 @@ a {
         opacity: 0.7;
     }
 
-    33% {
+    40% {
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 1;
