@@ -22,18 +22,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
   <title>SJR-MA</title>
   <link rel="icon" type="image/x-icon" href="#">
 </head>
 <body oncontextmenu='return false' class='snippet-body'>
 
 
-
-
-
-
-
-  
   <header>
     <section class="tela">
       <div class="overlay-wcs"></div>
@@ -60,6 +55,25 @@
     </section>
   </header>
     <main>
+
+<nav class="fixed-top" role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      <a href="#"><li>Sobre o autor</li></a>
+      <a href="#"><li>Artistas da terra</li></a>
+      <a href="#"><li>Mapa</li></a>
+      <a href="#"><li>Contato</li></a>
+      <a href="https://erikterwan.com/" target="_blank"><li>Um pouco mais</li></a>
+    </ul>
+  </div>
+</nav>
         <section class="about-section">
       <div class="container">
         <div class="row">
@@ -84,18 +98,7 @@
         </div> 
     </section> 
 
-    
-    <!--
-    <div class="ratio ratio-16x9">
-      <iframe
-        src="https://www.youtube.com/embed/vlDzYIIOYmM"
-        title="YouTube video"
-        allowfullscreen
-      ></iframe>
-    </div>
--->
-
-    
+     
 
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -124,8 +127,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <iframe width="100%" height="450" src="https://www.youtube.com/embed/-ggdMV0-T4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+               <iframe width="100%" height="450" src="https://www.youtube.com/embed/-ggdMV0-T4o" title="YouTube video player" frameborder="0" allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
     </div>
   </div>
 </div>
@@ -449,7 +452,7 @@
 
                 <h5><strong>FESTIVAL DO PEIXE PEDRA</strong></h5>
 
-                <p>Era um dos maiores festivais de pesca da cidade, hoje extinto.</p>
+                <p data-balloon-length="fit" data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense." data-balloon-pos="up">Era um dos maiores festivais de pesca da cidade, hoje extinto.</p>
               </div>
             </div><!-- /lc-block -->
 
@@ -659,14 +662,16 @@
 
 
 
-
+<div class="espaco"></div>
 
     <div class="container-fluid">
+      <h3 class="display-3 text-center"  data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
+      data-aos-duration="5000">DEPOIMENTOS</h3>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="5000">
           <div id="testimonial-slider" class="owl-carousel">
-            <div class="testimonial" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
-              data-aos-duration="5000">
+            <div class="testimonial">
               <div class="testimonial-content">
                 <div class="testimonial-icon">
                   <i class="fa fa-quote-left"></i>
@@ -783,7 +788,7 @@
 
     <section class="logo-list" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
       <div class="container">
-        <h3 class="display-6">QUEM APÓIA<h3>
+        <h3 class="display-3">QUEM APÓIA<h3>
             <div class="row">
               <div class="col-lg-2 col-md-4 col-6">
                 <a href="#"><img src="../img/logos.png" class="img-fluid"
