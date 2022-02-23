@@ -84,6 +84,7 @@ a {
     transform: scale(1.1);
 }
 
+
 .overlay::after {
     z-index: 1;
     content: "";
@@ -637,11 +638,8 @@ a {
 
 /******************* Parallax *******************/
 .parallax {
-    /* Coloque a imagem a ser usada como background */
     background-image: url("https://portalfacilarquivos.blob.core.windows.net/uploads/SAOJOSEDORIBAMAR/imgOrig/%7B6AED181C-A5C6-877C-E40B-E76DC75B5B50%7D.jpeg");
-    /* Defina uma altura para a visão que o usuário terá da imagem */
     min-height: 450px;
-    /* defina o background como fixo e posicione a imagem */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
