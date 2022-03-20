@@ -76,7 +76,7 @@ var caminhoSaoJose = new Vue({
     caminhosj: `
       <h5>Caminho de São José</h5>
       <p>
-      Em frente a Igreja da Matriz, veja as esculturas que contam a história da peregrinação da família de Jesus.
+      Em frente a Igreja da Matriz, existem oito esculturas que contam a história da peregrinação da família de Jesus. Esculturar bem trabalhadas feitas em Pedra Sabão, as imagens relatam muito bem a perigrinação de Jesus, Maria e José.
       </p>`
   }
 });
