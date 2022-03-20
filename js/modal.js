@@ -55,17 +55,17 @@
     }
   });
 
-  var mCasaMilagre = new Vue({
+  var mcasamilagre = new Vue({
     el: '#mcasamilagre',
     data: {
       mMilagres: `
-      <img src="../img/casa-dos-milagres.jpg" alt="São José de Ribamar" class="img img-fluid">
+      <img src="../img/casa-dos-milagres.jpg" alt="Casa dos Milagres" class="img img-fluid">
       <figcaption class="figure-caption text-right"><em> O Salão das Graças, primeiro nome dado ao espaço, foi construído em 1895 e, em pouco tempo, foi tomado por peças de pessoas de vários lugares do Maranhão.</em></figcaption></p>`
     }
   });
 
   var mCaminhosj = new Vue({
-    el: '#mcaminosj',
+    el: '#mcaminhosj',
     data: {
       mcaminho: `
       <img src="../img/caminhosj.jpg" alt="São José de Ribamar" class="img img-fluid">

@@ -26,7 +26,8 @@
   <title>SJR-MA</title>
   <link rel="icon" type="image/x-icon" href="#">
 </head>
-<body oncontextmenu='return false' class='snippet-body'>
+
+<body class='snippet-body'>
 
 
   <header>
@@ -70,10 +71,18 @@
       <a href="#"><li>Artistas da terra</li></a>
       <a href="#"><li>Mapa</li></a>
       <a href="#"><li>Contato</li></a>
-      <a href="https://erikterwan.com/" target="_blank"><li>Um pouco mais</li></a>
+      <a href="#" target="_blank"><li>Um pouco mais</li></a>
+      <li class="text-center"> Hino da cidade
+        <audio class="container-fluid " controls>
+          <source src="hino-de-ribamar.mp3" type="audio/mpeg">
+          <source src="hino-de-ribamar.ogg" type="audio/ogg">
+          <p>Seu navegador não suporta áudio HTML5. Aqui está um <a href="hino-de-ribamar.mp3">link para o áudio</a> em vez de.</p>
+        </audio>
+      </li>
     </ul>
   </div>
 </nav>
+
         <section class="about-section">
       <div class="container">
         <div class="row">
@@ -84,7 +93,7 @@
                   class="borda-sombra" alt="">
               </div>
               <div class="single-image image-tow float-right digit" id="reveal-elements">
-                <img src="img/igrejabiaman.jpg" class="borda-sombra" alt="">
+                <img src="../img/igreja-antiga.jpg" class="borda-sombra" alt="">
               </div>
             </div>
           </div>
@@ -96,9 +105,8 @@
               mais <i class="fas fa-arrow-right"></i></button>
           </div>
         </div> 
-    </section> 
-
-     
+      
+    </section>
 
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -107,7 +115,7 @@
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                    <div class="lc-block pt-5 mt-5 mb-4">
                 <div editable="rich">
-                  <h2 class="display-6 lh-1 fw-bold">São José de Ribamar em vídeo</h2>
+                  <h2 class="img-hover-zoom display-6 lh-1 fw-bold">São José de Ribamar em vídeo</h2>
                   <p>Conheça nossa cidade viajando no tempo com essas imagens, mostrando alguns anos atrás.</p>
                 </div>
               </div>
@@ -116,27 +124,12 @@
             </div>
         </div>
    
-<div class="modal fade" id="videoTRES" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Chegada a cidade</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15943.31292771!2d-44.064010680845655!3d-2.562645483786749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f6bd23fb33c69b%3A0xd6854e29eb6e459d!2sPra%C3%A7a%20da%20Matriz%20-%20S%C3%A3o%20Jos%C3%A9%20de%20Ribamar%2C%20MA%2C%2065110-000!5e0!3m2!1spt-BR!2sbr!4v1645470951745!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-           </div>
-    </div>
-  </div>
-</div>
-
-
         <div class="col">
           <div class="overlay play-two lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <div class="lc-block pt-5 mt-5 mb-4">
                 <div editable="rich">
-                  <h2 class="display-6 lh-1 fw-bold">Conheça hoje São José de Ribamar</h2>
+                  <h2 class="img-hover-zoom img-hover-zoom display-6 lh-1 fw-bold">Conheça hoje São José de Ribamar</h2>
                   <p>Não se pode negar, a cidade evoluiu ao longo desses anos e muita coisa mudou..</p>
                 </div>
               </div>
@@ -151,7 +144,7 @@
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <div class="lc-block pt-5 mt-5 mb-4">
                 <div editable="rich">
-                  <h2 class="display-6 lh-1 fw-bold">Como chegar a São José de Ribamar</h2>
+                  <h2 class="img-hover-zoom display-6 lh-1 fw-bold">Como chegar a São José de Ribamar</h2>
                   <p>Conheça a rota de chegada a cidade balneária do Santo Padroeiro do Maranhão.</p>
                 </div>
               </div>
@@ -161,8 +154,7 @@
         </div>
       </div>
     </div>
-    
-           
+              
     <section class="we_help_you aos-init aos-animate" id="we_help">
       <div class="container">
         <div class="row" data-aos="fade-down" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
@@ -381,7 +373,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Museu dos Ex-votos</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Casa dos Milagres</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" id="mcasamilagre" v-html="mMilagres">
@@ -403,7 +395,7 @@
             <h5 class="modal-title" id="exampleModalLabel">Museu dos Ex-votos</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body" id="mcaminosj" v-html="mcaminho">
+          <div class="modal-body" id="mcaminhosj" v-html="mcaminho">
             {{ mcaminho }}
           </div>
           <div class="modal-footer">
@@ -445,6 +437,271 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="videoTRES" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Chegada a cidade</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15943.31292771!2d-44.064010680845655!3d-2.562645483786749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f6bd23fb33c69b%3A0xd6854e29eb6e459d!2sPra%C3%A7a%20da%20Matriz%20-%20S%C3%A3o%20Jos%C3%A9%20de%20Ribamar%2C%20MA%2C%2065110-000!5e0!3m2!1spt-BR!2sbr!4v1645470951745!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Vídeos fim -->
+
+
+
+
+<!-- FAZER MODIFICAÇÕES AQUI -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+<section class="timeline-carousel">
+  <div class="container-fluid">
+     <div class="row">
+        <div class="col-12 text-center mb-5">
+           <h1>Passagens de São José</h1>
+           <p class="lead text-muted">Below is a concept of a horizontal timeline slider. You can drag the slides or click on the previous and next buttons.</p> 
+        </div>
+     </div>
+  </div>
+  <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+     
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+           <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+           <span class="year">2001-2003</span>
+           <span class="month">Eget felis eget nunc lobortis mattis</span>
+           <p>Eget felis eget nunc lobortis mattis aliquam faucibus. Viverra nam libero justo laoreet sit amet. Elementum pulvinar etiam non quam lacus suspendisse faucibus. Nam libero justo laoreet sit amet cursus sit amet. Risus sed vulputate odio ut enim blandit. Quam adipiscing vitae proin sagittis nisl rhoncus.</p>
+           <a href="#" class="read-more">Read more</a>
+        </div>
+     </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+           <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+           <span class="year">2003</span>
+           <span class="month">Tristique magna sit amet</span>
+           <p>Tristique magna sit amet purus gravida quis blandit turpis.</p>
+           <a href="#" class="read-more">Read more</a>
+        </div>
+     </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+           <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+           <span class="year">2003</span>
+           <span class="month">Mauris pellentesque pulvinar pellentesque habitant</span>
+           <p>Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Cursus in hac habitasse platea dictumst quisque. Ipsum dolor sit amet consectetur adipiscing elit. </p>
+           <a href="#" class="read-more">Read more</a>
+        </div>
+     </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+           <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x30/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+           <span class="year">2004</span>
+           <span class="month">Cum sociis natoque penatibus</span>
+           <p>Cum sociis natoque penatibus et magnis dis. Interdum velit laoreet id donec ultrices tincidunt arcu non. Lorem sed risus ultricies tristique. Dui vivamus arcu felis bibendum ut. Tortor id aliquet lectus proin nibh nisl condimentum id.</p>
+           <a href="#" class="read-more">Read more</a>
+        </div>
+     </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+           <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+           <div class="pointer"></div>
+           <span class="month">Dictumst vestibulum rhoncus est</span>
+           <p>Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Posuere ac ut consequat semper.</p>
+           <a href="#" class="read-more">Read more</a>
+        </div>
+     </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+           <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+           <span class="year">2005</span>
+           <span class="month">Id nibh tortor id aliquet</span>
+           <p>Nunc eget lorem dolor sed viverra. Id nibh tortor id aliquet. Sed blandit libero volutpat sed cras. Fermentum posuere urna nec tincidunt praesent. Id ornare arcu odio ut sem nulla pharetra diam.</p>
+           <a href="#" class="read-more">Read more</a>
+        </div>
+     </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+           <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+           <span class="year">2006</span>
+           <span class="month">Pulvinar neque laoreet suspendisse</span>
+           <p>Pulvinar neque laoreet suspendisse interdum consectetur. Libero volutpat sed cras ornare. Ac auctor augue mauris augue.</p>
+           <a href="#" class="read-more">Read more</a>
+        </div>
+     </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+        <div class="timeline-carousel__image">
+           <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+        </div>
+        <div class="timeline-carousel__item-inner">
+           <span class="year">2007</span>
+           <span class="month">Egestas quis ipsum</span>
+           <p>Non odio euismod lacinia at. Egestas quis ipsum suspendisse ultrices gravida. Dui nunc mattis enim ut tellus elementum sagittis vitae. Lectus quam id leo in vitae turpis massa sed elementum. Ridiculus mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus./p>
+           <a href="#" class="read-more">Read more</a>
+        </div>
+     </div>
+     <!--/Timeline item-->
+
+     <!--Timeline item-->
+     <div class="timeline-carousel__item">
+      <div class="timeline-carousel__image">
+         <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+      </div>
+      <div class="timeline-carousel__item-inner">
+         <span class="year">2007</span>
+         <span class="month">Egestas quis ipsum</span>
+         <p>Non odio euismod lacinia at. Egestas quis ipsum suspendisse ultrices gravida. Dui nunc mattis enim ut tellus elementum sagittis vitae. Lectus quam id leo in vitae turpis massa sed elementum. Ridiculus mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus./p>
+         <a href="#" class="read-more">Read more</a>
+      </div>
+   </div>
+   <!--/Timeline item-->
+
+   <!--Timeline item-->
+   <div class="timeline-carousel__item">
+    <div class="timeline-carousel__image">
+       <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+    </div>
+    <div class="timeline-carousel__item-inner">
+       <span class="year">2007</span>
+       <span class="month">Egestas quis ipsum</span>
+       <p>Non odio euismod lacinia at. Egestas quis ipsum suspendisse ultrices gravida. Dui nunc mattis enim ut tellus elementum sagittis vitae. Lectus quam id leo in vitae turpis massa sed elementum. Ridiculus mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus./p>
+       <a href="#" class="read-more">Read more</a>
+    </div>
+ </div>
+ <!--/Timeline item-->
+
+ <!--Timeline item-->
+ <div class="timeline-carousel__item">
+  <div class="timeline-carousel__image">
+     <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+  </div>
+  <div class="timeline-carousel__item-inner">
+     <span class="year">2007</span>
+     <span class="month">Egestas quis ipsum</span>
+     <p>Non odio euismod lacinia at. Egestas quis ipsum suspendisse ultrices gravida. Dui nunc mattis enim ut tellus elementum sagittis vitae. Lectus quam id leo in vitae turpis massa sed elementum. Ridiculus mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus./p>
+     <a href="#" class="read-more">Read more</a>
+  </div>
+</div>
+<!--/Timeline item-->
+<!--Timeline item-->
+<div class="timeline-carousel__item">
+  <div class="timeline-carousel__image">
+     <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+  </div>
+  <div class="timeline-carousel__item-inner">
+     <span class="year">2007</span>
+     <span class="month">Egestas quis ipsum</span>
+     <p>Non odio euismod lacinia at. Egestas quis ipsum suspendisse ultrices gravida. Dui nunc mattis enim ut tellus elementum sagittis vitae. Lectus quam id leo in vitae turpis massa sed elementum. Ridiculus mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus./p>
+     <a href="#" class="read-more">Read more</a>
+  </div>
+</div>
+<!--/Timeline item-->
+<!--Timeline item-->
+<div class="timeline-carousel__item">
+  <div class="timeline-carousel__image">
+     <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+  </div>
+  <div class="timeline-carousel__item-inner">
+     <span class="year">2007</span>
+     <span class="month">Egestas quis ipsum</span>
+     <p>Non odio euismod lacinia at. Egestas quis ipsum suspendisse ultrices gravida. Dui nunc mattis enim ut tellus elementum sagittis vitae. Lectus quam id leo in vitae turpis massa sed elementum. Ridiculus mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus./p>
+     <a href="#" class="read-more">Read more</a>
+  </div>
+</div>
+<!--/Timeline item-->
+<!--Timeline item-->
+<div class="timeline-carousel__item">
+  <div class="timeline-carousel__image">
+     <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+  </div>
+  <div class="timeline-carousel__item-inner">
+     <span class="year">2007</span>
+     <span class="month">Egestas quis ipsum</span>
+     <p>Non odio euismod lacinia at. Egestas quis ipsum suspendisse ultrices gravida. Dui nunc mattis enim ut tellus elementum sagittis vitae. Lectus quam id leo in vitae turpis massa sed elementum. Ridiculus mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus./p>
+     <a href="#" class="read-more">Read more</a>
+  </div>
+</div>
+<!--/Timeline item-->
+
+  </div>
+</section>
+
+
+<script>
+  $.js = function (el) {
+    return $('[data-js=' + el + ']')
+};
+
+function carousel() {
+  $.js('timeline-carousel').slick({
+    infinite: false,
+    arrows: true,
+     arrows: true,
+    prevArrow: '<div class="slick-prev"> <div class="btn mr-3 btn-warning d-flex justify-content-center align-items-center"> <div>Anterior</div><svg class="ml-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"> <path d="M10.1,19.1l1.5-1.5L7,13h14.1v-2H7l4.6-4.6l-1.5-1.5L3,12L10.1,19.1z"/> </svg></div></div>',
+    nextArrow: '<div class="slick-next"> <div class="btn btn-warning d-flex justify-content-center align-items-center"> <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M 14 4.9296875 L 12.5 6.4296875 L 17.070312 11 L 3 11 L 3 13 L 17.070312 13 L 12.5 17.570312 L 14 19.070312 L 21.070312 12 L 14 4.9296875 z"/> </svg> <div>Próximo</div></div></div>',
+    dots: true,
+    autoplay: false,
+    speed: 1100,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+  });
+}
+
+carousel();
+</script>
+
+
+<!-- ATÉ AQUI MODIFICAR MUITA COISA -->
+
+
 
 
 
@@ -626,50 +883,51 @@
   
           <div class="row no-gutters">
               <div class="col-sm-6 col-md-4 item zoom-on-hover" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/praia-de-banho.jpg">
-                      <img src="../img/praia-de-banho.jpg" alt="Park">
+                  <a class="lightbox" href="../img-galeria/praia-de-banho.jpg">
+                      <img src="../img-galeria/praia-de-banho.jpg" alt="">
                   </a>
               </div>
               <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/praia-do-aracagy.jpg">
-                      <img src="../img/praia-do-aracagy.jpg" alt="Bridge">
+                  <a class="lightbox" href="../img-galeria/praia-do-aracagy.jpg">
+                      <img src="../img-galeria/praia-do-aracagy.jpg" alt="">
                   </a>
               </div>
               <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/praia-do-jucatuba.jpg">
-                      <img src="../img/praia-do-jucatuba.jpg" alt="Tunnel">
+                  <a class="lightbox" href="../img-galeria/praia-do-jucatuba.jpg">
+                      <img src="../img-galeria/praia-do-jucatuba.jpg" alt="">
                   </a>
               </div>
               <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/praia-de-panaquatira.jpg">
-                      <img src="../img/praia-de-panaquatira.jpg" alt="Coast">
+                  <a class="lightbox" href="../img-galeria/praia-de-panaquatira.jpg">
+                      <img src="../img-galeria/praia-de-panaquatira.jpg" alt="">
                   </a>
               </div>
               <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/praia-de-caura.jpg">
-                      <img src="../img/praia-de-caura.jpg" alt="Rails">
+                  <a class="lightbox" href="../img-galeria/praia-de-caura.jpg">
+                      <img src="../img-galeria/praia-de-caura.jpg" alt="">
                   </a>
               </div>
               <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/praia-da-ponta-verde.jpg">
-                      <img src="../img/praia-da-ponta-verde.jpg" alt="Traffic">
+                  <a class="lightbox" href="../img-galeria/praia-da-ponta-verde.jpg">
+                      <img src="../img-galeria/praia-da-ponta-verde.jpg" alt="">
                   </a>
               </div>
               <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/praia-do-aracagy.jpg">
-                      <img src="../img/praia-do-aracagy.jpg" alt="Rocks">
+                  <a class="lightbox" href="../img-galeria/praia-do-aracagy.jpg">
+                      <img src="../img-galeria/praia-do-aracagy.jpg" alt="">
                   </a>
               </div>
               <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/praia-do-jucatuba.jpg">
-                      <img src="../img/praia-do-jucatuba.jpg" alt="Benches">
+                  <a class="lightbox" href="../img-galeria/praia-do-jucatuba.jpg">
+                      <img src="../img-galeria/praia-do-jucatuba.jpg" alt="">
                   </a>
               </div>
               <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-                  <a class="lightbox" href="../img/igrejabiaman.jpg">
-                      <img src="../img/igrejabiaman.jpg" alt="Sky">
+                  <a class="lightbox" href="../img-galeria/cais.jpg">
+                      <img src="../img-galeria/cais.jpg" alt="">
                   </a>
-              </div>
+
+
           </div>
   
       </div>
@@ -688,7 +946,7 @@
 
     <div class="container-fluid">
       <h3 class="display-3 text-center"  data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
-      data-aos-duration="5000">DEPOIMENTOS</h3>
+      data-aos-duration="5000">Depoimentos</h3>
       <div class="row">
         <div class="col-md-12" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
         data-aos-duration="5000">
@@ -810,7 +1068,7 @@
 
     <section class="logo-list" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
       <div class="container">
-        <h3 class="display-3">QUEM APÓIA<h3>
+        <h3 class="display-3">Quem Apoia<h3>
             <div class="row">
               <div class="col-lg-2 col-md-4 col-6">
                 <a href="#"><img src="../img/logos.png" class="img-fluid"
@@ -946,7 +1204,6 @@
         })
         .setClassToggle(revealElements[i], "visible")
         .addTo(controller);
-        
     }
   </script>
   <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
@@ -963,7 +1220,5 @@
   </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
   </script>
-
 </body>
-
 </html>
