@@ -25,7 +25,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
   <title>SJR-MA</title>
   <link rel="icon" type="image/x-icon" href="#">
@@ -35,6 +35,7 @@
 
 
   <header>
+
     <section class="tela">
       <div class="overlay-wcs"></div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -120,43 +121,28 @@
               mais <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
-
+      </div>
     </section>
 
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-          <div
-            class="overlay play-one lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-            data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <div class="lc-block pt-5 mt-5 mb-4">
-                <div editable="rich">
-                  <h2 class="img-hover-zoom display-6 lh-1 fw-bold"><a data-bs-toggle="modal"
-                      data-bs-target="#videoUM">São José de Ribamar em vídeo</a></h2>
-                  <p>Conheça nossa cidade viajando no tempo com essas imagens, mostrando alguns anos atrás.</p>
-                </div>
-              </div>
-              <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white"
-                  role="button" data-bs-toggle="modal" data-bs-target="#videoUM">Veja</a></ul>
-            </div>
-          </div>
-        </div>
+
 
         <div class="col">
           <div
-            class="overlay play-two lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            class="overlay play-tree lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
             data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <div class="lc-block pt-5 mt-5 mb-4">
                 <div editable="rich">
-                  <h2 class="img-hover-zoom img-hover-zoom display-6 lh-1 fw-bold"><a data-bs-toggle="modal"
-                      data-bs-target="#videoDOIS">Conheça hoje São José de Ribamar</a></h2>
-                  <p>Não se pode negar, a cidade evoluiu ao longo desses anos e muita coisa mudou..</p>
+                  <h2 class="img-hover-zoom display-6 lh-1 fw-bold video-btn" data-toggle="modal"
+                    data-target="#videoUM">São José
+                    de Ribamar em vídeo
+                  </h2>
+                  <p>Conheça nossa cidade viajando no tempo com essas imagens, mostrando alguns anos atrás.</p>
                 </div>
               </div>
-              <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white "
-                  href="#" role="button" data-bs-toggle="modal" data-bs-target="#videoDOIS">Veja</a></ul>
+
             </div>
           </div>
         </div>
@@ -169,25 +155,41 @@
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <div class="lc-block pt-5 mt-5 mb-4">
                 <div editable="rich">
-                  <h2 class="img-hover-zoom display-6 lh-1 fw-bold"><a data-bs-toggle="modal"
-                      data-bs-target="#videoTRES">Como chegar a São José de Ribamar</a></h2>
+                  <h2 class="img-hover-zoom display-6 lh-1 fw-bold"><a data-toggle="modal"
+                      data-target="#videoDOIS">Conheça hoje São José de Ribamar</a></h2>
+                  <p>Não se pode negar, a cidade evoluiu ao longo desses anos e muita coisa mudou..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div
+            class="overlay play-tree lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <div class="lc-block pt-5 mt-5 mb-4">
+                <div editable="rich">
+                  <h2 class="img-hover-zoom display-6 lh-1 fw-bold"><a data-toggle="modal" data-target="#videoTRES">Como
+                      chegar a São José de Ribamar</a></h2>
                   <p>Conheça a rota de chegada a cidade balneária do Santo Padroeiro do Maranhão.</p>
                 </div>
               </div>
-              <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white "
-                  href="#" role="button" data-bs-toggle="modal" data-bs-target="#videoTRES">Veja</a></ul>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+
     <section class="we_help_you aos-init aos-animate" id="we_help">
       <div class="container">
         <div class="row" data-aos="fade-down" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
           data-aos-duration="5000">
           <div class="col-lg-9 mx-auto">
-            <h3 class="display-2">O que fazer em Ribamar</h3>
+            <h3 class="titler">Pontos a se visitar</h3>
             <p>Já na cidade balneária de São José do Ribamar a religiosidade é a marca mais forte, por abrigar um dos
               santuários mais importantes do Norte-Nordeste em homenagem a São José, o padroeiro do Maranhão. Além das
               festas religiosas, a região se destaca pela culinária, pelas tranquilas praias urbanas e desertas, e pelo
@@ -442,19 +444,22 @@
 
     <!-- /////////////////////////////////////////FIM MODAL//////////////////////////////////////// -->
 
-    <!-- Modal Vídeos -->
+
+
+    <!-- ------------------------------- MODAL VIDEOS -------------------------------------------------------- -->
+
+    <!-- Modal -->
     <div class="modal fade" id="videoUM" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-lg role=" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">O ano era 1989</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/-ggdMV0-T4o"
-              title="YouTube video player" frameborder="0"
-              allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="100%" height="450" class="embed-responsive-item" id="sjRIBAMAR"
+                src="https://www.youtube.com/embed/-ggdMV0-T4o" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -462,28 +467,29 @@
 
 
     <div class="modal fade" id="videoDOIS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-lg role=" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Dias atuais</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/aRXwijiGChM"
-              title="YouTube video player" frameborder="0"
-              allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="100%" height="450" class="embed-responsive-item" id="sjRIBAMARII"
+                src="//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+
 
     <div class="modal fade" id="videoTRES" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Chegada a cidade</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <iframe
@@ -496,88 +502,171 @@
     <!-- Modal Vídeos fim -->
 
     <section class="we_help_you aos-init aos-animate" id="we_help">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
           data-aos-duration="5000">
           <div class="col-lg-9 mx-auto">
-            <h2 class="display-2">Costumes Culturais</h2>
+            <h2 class="titler">Costumes Culturais</h2>
             <p>A culinária de São José de Ribamar tem sabor bem característico à base de frutos do mar e peixes de água
               salgada típicos da região. Uma das iguarias do ribamarense é o peixe-pedra, muito abundante na região, que
               entre os meses de julho e agosto é realizado um festival onde servem este peixe cozido, frito, assado e
               escabeche.</p>
           </div>
         </div>
-    </section>
 
 
-    <div class="min-vh-100 d-flex">
-      <div class="container align-self-center">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-            <div class="lc-block py-5">
-              <div editable="rich" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
-                data-aos-duration="5000">
 
-                <h5><strong>FESTIVAL DO PEIXE PEDRA</strong></h5>
-
-                <p data-balloon-length="fit"
-                  data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense."
-                  data-balloon-pos="up">Era um dos maiores festivais de pesca da cidade, hoje extinto.</p>
+        <section class="section gray-bg" id="resume">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 m-15px-tb">
+                <div class="resume-box">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2019 - Present</span>
+                      <h5>Art Director - Facebook Inc</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua.</p>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2019 - Present</span>
+                      <h5>Art Director - Facebook Inc</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua.</p>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2019 - Present</span>
+                      <h5>Art Director - Facebook Inc</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua.</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div><!-- /lc-block -->
-
-            <div class="lc-block py-5">
-              <div editable="rich" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
-                data-aos-duration="5000">
-
-                <h5><strong>LAVA PRATOS</strong></h5>
-
-                <p data-balloon-length="fit"
-                  data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense."
-                  data-balloon-pos="up">Primeiro Carnaval fora de época do Brasil, comemorado após o carnaval oficial.
-                </p>
+              <div class="col-lg-6 m-15px-tb">
+                <div class="resume-box">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                      </div>
+                      <span class="time">2019 - Present</span>
+                      <h5>Art Director - Facebook Inc</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua.</p>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                      </div>
+                      <span class="time">2019 - Present</span>
+                      <h5>Art Director - Facebook Inc</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua.</p>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                      </div>
+                      <span class="time">2019 - Present</span>
+                      <h5>Art Director - Facebook Inc</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua.</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div><!-- /lc-block -->
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-center ">
-            <div class="lc-block mb-2" style="width:100%" data-aos="fade-down" data-aos-once="true"
-              data-aos-anchor-placement="bottom-bottom">
-
-              <img alt="" class="img-fluid" src="../img/sao-joseemaria-menino-jesus.svg">
-
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
-            <div class="lc-block py-5">
-              <div editable="rich" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
-                data-aos-duration="5000">
+        </section>
 
-                <h5><strong>LAVA BOIS</strong></h5>
 
-                <p data-balloon-length="fit"
-                  data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense."
-                  data-balloon-pos="up">Manifestação junina que também logo após o São João grupos de Bumba Bois se
-                  reunem na avenida da cidade.</p>
+        <!--
+        <div class="min-vh-100 d-flex">
+          <div class="container align-self-center">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="lc-block py-5">
+                  <div editable="rich" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="5000">
+
+                    <h5><strong>FESTIVAL DO PEIXE PEDRA</strong></h5>
+
+                    <p data-balloon-length="fit"
+                      data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense."
+                      data-balloon-pos="up">Era um dos maiores festivais de pesca da cidade, hoje extinto.</p>
+                  </div>
+                </div>
+
+                <div class="lc-block py-5">
+                  <div editable="rich" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="5000">
+
+                    <h5><strong>LAVA PRATOS</strong></h5>
+
+                    <p data-balloon-length="fit"
+                      data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense."
+                      data-balloon-pos="up">Primeiro Carnaval fora de época do Brasil, comemorado após o carnaval
+                      oficial.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div><!-- /lc-block -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-center ">
+                <div class="lc-block mb-2" style="width:100%" data-aos="fade-down" data-aos-once="true"
+                  data-aos-anchor-placement="bottom-bottom">
 
-            <div class="lc-block py-5">
-              <div editable="rich" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
-                data-aos-duration="5000">
+                  <img alt="" class="img-fluid" src="../img/pescaria.svg">
 
-                <h5><strong>FEIRINHA RIBAMAR</strong></h5>
-
-                <p data-balloon-length="fit"
-                  data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense."
-                  data-balloon-pos="up">A mais nova atração túristcida da cidade que inaugurou no ano 2022 com uma
-                  roupagem bem moderna.</p>
+                </div>
               </div>
-            </div><!-- /lc-block -->
-          </div>
-        </div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                <div class="lc-block py-5">
+                  <div editable="rich" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="5000">
+
+                    <h5><strong>LAVA BOIS</strong></h5>
+
+                    <p data-balloon-length="fit"
+                      data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense."
+                      data-balloon-pos="up">Manifestação junina que também logo após o São João grupos de Bumba Bois se
+                      reunem na avenida da cidade.</p>
+                  </div>
+                </div>
+
+                <div class="lc-block py-5">
+                  <div editable="rich" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-duration="5000">
+
+                    <h5><strong>FEIRINHA RIBAMAR</strong></h5>
+
+                    <p data-balloon-length="fit"
+                      data-balloon="A primeira edição do Festival, de acordo com relatos históricos, aconteceu em 1977 e foi promovida pela administração João Alves da Silva. O então prefeito pensou no evento como uma forma de atrair visitantes para o município através da promoção da cultura e da culinária ribamarense."
+                      data-balloon-pos="up">A mais nova atração túristcida da cidade que inaugurou no ano 2022 com uma
+                      roupagem bem moderna.</p>
+                  </div>
+                </div>
+                -->
       </div>
-    </div>
-
+      </div>
+      </div>
+      </div>
+    </section>
 
     <div class="espaco"></div>
 
@@ -761,8 +850,8 @@
     <div class="espaco"></div>
 
     <div class="container-fluid">
-      <h3 class="display-3 text-center" data-aos="fade-up" data-aos-once="true"
-        data-aos-anchor-placement="bottom-bottom" data-aos-duration="5000">Depoimentos</h3>
+      <h3 class="titler text-center" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="5000">Depoimentos</h3>
       <div class="row">
         <div class="col-md-12" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
           data-aos-duration="5000">
@@ -854,7 +943,7 @@
     <section class="logo-list" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="bottom-bottom"
       data-aos-duration="5000">
       <div class="container">
-        <h3 class="display-3">Quem Apoia<h3>
+        <h3 class="titler">Quem Apoia<h3>
             <div class="row">
               <div class="col-lg-2 col-md-4 col-6">
                 <a href="#"><img src="../img/logos.png" class="img-fluid" alt="Logo"></a>
@@ -953,7 +1042,12 @@
     </div>
   </footer>
 
+
   <!--Bottom Footer-->
+  <script src='https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js'></script>
+
+
+  <script src="js/autoplay.js"></script>
   <script src="js/index.js"></script>
   <script src="js/modal.js"></script>
   <!-- Optional JavaScript; choose one of the two! -->
@@ -962,13 +1056,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script>
     // Controle da animação
